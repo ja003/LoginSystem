@@ -1,0 +1,4 @@
+8 Creating a Dialog Fragment
+
+- 8) https://www.youtube.com/watch?v=j_0s9IslwYs
+- added popup dialog for sign up

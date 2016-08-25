@@ -38,5 +38,11 @@ C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginS
 C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\drawable\buttonsigninstyle.xml
 C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\drawable\buttonsignupstyle.xml.xml
 C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\drawable\progressbarstyle.xml
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\layout\dialog_sign_up.xml
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\drawable\icon_mail.png
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\drawable\edit_text_style.xml
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\anim\slide_up.xml
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\anim\slide_right.xml
+C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\res\values\styles.xml
 C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\obj\Debug\LoginSystem.dll.mdb
 C:\Users\ja004\onedrive\dokumenty\visual studio 2015\Projects\LoginSystem\LoginSystem\bin\Debug\LoginSystem.dll.mdb

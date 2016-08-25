@@ -11,17 +11,23 @@ namespace LoginSystem
     [Activity(Label = "LoginSystem", MainLauncher = true, Icon = "@drawable/icon")]
     public class MainActivity : Activity
     {
-        int count = 1;
+        private Button mBtnSignUp;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
-            // Set our view from the "main" layout resource
+            
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
+            mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
+            mBtnSignUp.Click += (object sender, EventArgs args) =>
+            {
+                //pull up dialog
+                FragmentTransaction transaction = FragmentManager.BeginTransaction();
+
+                dialog_SignUp signUpDialog = new dialog_SignUp();
+                signUpDialog.Show(transaction, "dialog fragment");
+            };
 
         }
     }
