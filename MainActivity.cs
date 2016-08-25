@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using System.Threading;
 
 namespace LoginSystem
 {
@@ -12,6 +13,7 @@ namespace LoginSystem
     public class MainActivity : Activity
     {
         private Button mBtnSignUp;
+        private ProgressBar mProgressBar;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -20,6 +22,8 @@ namespace LoginSystem
             SetContentView(Resource.Layout.Main);
 
             mBtnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
+            mProgressBar = FindViewById<ProgressBar>(Resource.Id.progressBar1);
+
             mBtnSignUp.Click += (object sender, EventArgs args) =>
             {
                 //pull up dialog
@@ -27,8 +31,24 @@ namespace LoginSystem
 
                 dialog_SignUp signUpDialog = new dialog_SignUp();
                 signUpDialog.Show(transaction, "dialog fragment");
+
+                signUpDialog.mOnSignUpComplete += signUpDialog_mOnSignUpComplete;
             };
 
+        }
+
+        private void signUpDialog_mOnSignUpComplete(object sender, OnSignUpEventArgs e)
+        {
+            mProgressBar.Visibility = ViewStates.Visible;
+
+            Thread thread = new Thread(ActLikeARequest);
+            thread.Start();
+        }
+
+        private void ActLikeARequest()
+        {
+            Thread.Sleep(3000);
+            RunOnUiThread(() => { mProgressBar.Visibility = ViewStates.Invisible; });
         }
     }
 }
