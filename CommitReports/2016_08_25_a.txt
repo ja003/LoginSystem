@@ -1,0 +1,5 @@
+6+7 Customizing Buttons and Progress Bars
+
+- 6) https://www.youtube.com/watch?v=tf2O_t-ayJ8
+- 7) https://www.youtube.com/watch?v=RBQeTUNu_Kk
+- created styles for buttons and progress bar
